@@ -15,7 +15,7 @@ const save = async () => {
  const produtos = await (await connection)
  .execute(`INSERT INTO produtos(id, nome, descricao,
  preco, data_atualizado) VALUES ('3', 'unilavras', 'nota 5',
- '6 reais', '2003/02/12')`);
+ '6 reais', '2003/01/20')`);
  return produtos[0];
 };
 const remove = async () => {

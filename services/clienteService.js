@@ -13,12 +13,12 @@ const update = async () => {
 const save = async () => {
  const clientes = await (await connection)
  .execute(`INSERT INTO clientes(id, nome, sobrenome,
- email, idade) VALUES ('20', 'João', 'tilapia', 'tilapia@gmail.com', '25')`);
+ email, idade) VALUES ('24', 'João', 'tilapia', 'tilapia@gmail.com', '25')`);
  return clientes[0];
 };
 const remove = async () => {
  const clientes = await (await connection)
- .execute(`DELETE FROM clientes WHERE id = '0'`);
+ .execute(`DELETE FROM clientes WHERE id = '20'`);
  return clientes[0];
 };
 module.exports = {
