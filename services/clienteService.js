@@ -13,7 +13,7 @@ const update = async () => {
 const save = async () => {
  const clientes = await (await connection)
  .execute(`INSERT INTO clientes(id, nome, sobrenome,
- email, idade) VALUES ('24', 'João', 'tilapia', 'tilapia@gmail.com', '25')`);
+ email, idade) VALUES ('27', 'João', 'tilapia', 'tilapia@gmail.com', '25')`);
  return clientes[0];
 };
 const remove = async () => {
